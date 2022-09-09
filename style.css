@@ -1,0 +1,18 @@
+* {
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(255, 231, 234);
+}
+
+
+.error {
+    color:red;
+}
+.valid {
+    color:green;
+}
+
+
+
+
+
+
