@@ -109,6 +109,8 @@ require_once('connection.php');
 
             return this.optional(element) || retorno;
 
+
+
         }, "Informe um CPF válido");
 
     });
@@ -179,26 +181,18 @@ require_once('connection.php');
                         cpf: cpf
                     },
                     success: function(data) {
-                        Swal.fire({
-                            'title': 'Successful',
-                            'text': data,
-                            'type': 'success'
-                        })
+                       alert("cadastro com sucesso")
 
                         row = `<tr>
                             <td>${name}</td>
                             <td>${email}</td>
                             <td>${cpf}</td>
                             </tr>`
-                        $('#myTable tbody').append(row);
+                        $('#myTable tbody').prepend(row);
 
                     },
                     error: function(data) {
-                        Swal.fire({
-                            'title': 'Errors',
-                            'text': 'There were errors while saving the data.',
-                            'type': 'error'
-                        })
+                       alert("erro ao cadastrar")
                     }
                 });
 

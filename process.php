@@ -7,19 +7,6 @@ require_once('connection.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-/*
-		----NAOFUNCIONA--- VERIFICACAO SE EMAIL EXISTE NO BD ----NAOFUNCIONA-----
-	if(isset($_POST['enviar'])){
-		$email = $_POST['email'];
-		$query = $pdo->prepare("SELECT * FROM formulario_teste WHERE email = ?");
-$query->execute([$email]);
-$result = $query->rowCount();
-if($result > 0 ){
-	$error = "<span class='text-danger'>Email taken</span>";
-}
-
-	} */
-
 
 	
 $name = $_POST['name'];
